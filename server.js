@@ -1,10 +1,10 @@
-// Nạp module http có sẵn của Node.js (không cần cài thêm gì)
+// Nạp module http có sẵn của Node.js
 const http = require("http");
 
-// Cổng mà server sẽ lắng nghe, truy cập qua localhost:3000
+// Cổng server lắng nghe
 const PORT = 3000;
 
-// Nội dung trang HTML sẽ trả về cho trình duyệt
+// Trang HTML trả về cho trình duyệt
 const html = `<!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -42,17 +42,13 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-// Tạo server: mỗi khi có người truy cập (request), hàm này chạy
-// req = yêu cầu từ trình duyệt, res = phản hồi mình gửi lại
+// Tạo server: mỗi lần có truy cập thì trả về trang HTML
 const server = http.createServer((req, res) => {
-  // Báo mã 200 (thành công) và kiểu nội dung là HTML, hỗ trợ tiếng Việt (utf-8)
   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-  // Gửi nội dung HTML về và kết thúc phản hồi
   res.end(html);
 });
 
-// Bật server, bắt đầu lắng nghe ở cổng 3000
+// Bật server ở cổng 3000
 server.listen(PORT, () => {
-  // In ra Terminal để biết server đã chạy
   console.log(`Server đang chạy tại http://localhost:${PORT}`);
 });
