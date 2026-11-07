@@ -5,8 +5,8 @@ const http = require("http");
 const PORT = 3000;
 
 // Thông tin sinh viên (sửa mã sinh viên cho đúng)
-const hoTen = "Nguyễn Trần Nhật Tiến";
-const maSV = "CDCNTT18B23";
+const hoTen = "Nguyễn Anh Kiệt";
+const maSV = "CDCNTT18B14";
 const lop = "CDCNTT18B";
 
 // Trang HTML trả về cho trình duyệt
