@@ -6,7 +6,8 @@ const PORT = 3000;
 
 // Thông tin sinh viên (sửa mã sinh viên cho đúng)
 const hoTen = "Nguyễn Trần Nhật Tiến";
-const maSV = "MÃ-SV-CỦA-BẠN";
+const maSV = "CDCNTT18B23";
+const lop = "CDCNTT18B";
 
 // Trang HTML trả về cho trình duyệt
 const html = `<!DOCTYPE html>
@@ -41,12 +42,12 @@ const html = `<!DOCTYPE html>
     <h1>Xin chào!</h1>
     <p>Họ và tên: <strong>${hoTen}</strong></p>
     <p>Mã sinh viên: <strong>${maSV}</strong></p>
-    <p>Lớp: CDCNTT18B</p>
+    <p>Lớp: ${lop}</p>
   </div>
 </body>
 </html>`;
 
-// Tạo server: mỗi lần có người truy cập thì trả về trang HTML
+// Tạo server: mỗi lần có truy cập thì trả về trang HTML
 const server = http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
   res.end(html);
