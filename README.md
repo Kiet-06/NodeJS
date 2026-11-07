@@ -1,6 +1,6 @@
 # Bài 1 — Tổng quan Node.js và MongoDB
 
-Sinh viên: Nguyễn Trần Nhật Tiến | Mã SV:CDCNTT18B23 | Lớp: CDCNTT18B
+Sinh viên: Nguyễn Anh Kiệt | Mã SV:CDCNTT18B14 | Lớp: CDCNTT18B
 
 ## 1. Tổng quan
 - **Node.js**: môi trường chạy JavaScript phía server, dựa trên engine V8 của Chrome.
@@ -32,7 +32,7 @@ Kết nối Compass tới `mongodb://localhost:27017`, tạo database `edulab`, 
 
 ## 5. Tạo và chạy hello.js
 ```javascript
-console.log("Xin chào, mình tên là Nguyễn Trần Nhật Tiến!");
+console.log("Xin chào, mình tên là Nguyễn Anh Kiệt!");
 console.log("Phiên bản Node.js:", process.version);
 ```
 Chạy: `node hello.js`
