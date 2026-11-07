@@ -35,7 +35,7 @@ const html = `<!DOCTYPE html>
 <body>
   <div class="card">
     <h1>Xin chào!</h1>
-    <p>Họ và tên: <strong>Nguyễn Trần Nhật Tiến</strong></p>
+    <p>Họ và tên: <strong>Nguyễn Anh Kiệt</strong></p>
     <p>Lớp: CDCNTT18B</p>
     <p>Bài 2: HTTP Server đầu tiên bằng Node.js</p>
   </div>
