@@ -1,0 +1,3 @@
+Dòng 1: Hôm nay mình học module fs trong Node.js
+Dòng 2: fs.writeFile dùng để tạo và ghi tập tin
+Dòng 3: fs.rename dùng để đổi tên tập tin
